@@ -64771,7 +64771,7 @@ function gve({results: e, currentLoan: t, newLoan: r}) {
     return S.jsxs("div", {
         className: "refi-results-grid",
         children: [S.jsx(wv, {
-            header: "Original cost with interest",
+            header: "Original cost with total interest",
             value: Xu.format(t.totalCost),
             color: "gray"
         }), S.jsx(wv, {
