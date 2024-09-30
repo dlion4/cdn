@@ -64427,9 +64427,9 @@ const uve = e => ({
         type: "CLEAR_CALCULATOR"
     })
 })
-  , Xu = new Intl.NumberFormat("en-US",{
+  , Xu = new Intl.NumberFormat("en-KE", {
     style: "currency",
-    currency: "USD"
+    currency: "KES"
 })
   , Gx = e => {
     const t = Object.entries(e).map(r => {
