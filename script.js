@@ -12832,7 +12832,7 @@ const LD = vi(RD)
     rawValueTrimPrefix: !0
 }
   , _m = {
-    prefix: "KES: ",
+    prefix: "KES ",
     noImmediatePrefix: !0,
     numericOnly: !0,
     numeral: !0,
@@ -12842,7 +12842,7 @@ const LD = vi(RD)
     rawValueTrimPrefix: !0
 }
   , E3 = {
-    prefix: "KES: ",
+    prefix: "KES ",
     noImmediatePrefix: !0,
     numericOnly: !0,
     numeral: !0,
@@ -12945,6 +12945,7 @@ function Ie() {
     ,
     Ie.apply(this, arguments)
 }
+
 function Na(e) {
     "@babel/helpers - typeof";
     return Na = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(t) {
@@ -64078,8 +64079,8 @@ function $x({state: e, handleUpdate: t}) {
                             handleAnalytics: r
                         }), S.jsx(fN, {
                             label: "Remaining Years",
-                            min: 5,
-                            max: 30,
+                            min: 1,
+                            max: 10,
                             onChange: t.yearsRemaining,
                             value: e.currentLoanInformation.yearsRemaining,
                             handleAnalytics: r
@@ -64167,7 +64168,7 @@ function zx({state: e, handleUpdate: t}) {
                             label: "Loan Term (in years)",
                             sublabel: tve[e.displayType],
                             min: 5,
-                            max: 20,
+                            max: 10,
                             value: a,
                             onChange: t.term,
                             handleAnalytics: i
@@ -64311,7 +64312,7 @@ function ove({value: e, onChange: t, isValid: r, message: a, handleAnalytics: n}
             inputMode: "numeric",
             options: _m,
             name: "monthlyPayment",
-            label: "$",
+            label: "KES",
             placeholder: "",
             value: e,
             isValid: r,
@@ -64353,7 +64354,7 @@ function lve({value: e, onChange: t, isValid: r, message: a, handleAnalytics: n}
             inputMode: "numeric",
             options: _m,
             name: "monthlyPayment",
-            label: "$",
+            label: "KES",
             placeholder: "",
             value: e,
             isValid: r,
@@ -64898,7 +64899,7 @@ function Cve({state: e, handleUpdate: t}) {
                             className: "h4",
                             children: "Ready to get started?"
                         }), S.jsx("a", {
-                            href: "/apply",
+                            href: "/loans/prequalify/",
                             className: "button button__dark-teal button__width-310 dropshadow dropshadow__hover-off",
                             children: "Check Your Rate In 1 Minute"
                         })]
