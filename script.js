@@ -63473,7 +63473,7 @@ function hN({payments: e, onChange: t, value: r, handleAnalytics: a}) {
     const n = Object.keys(e).indexOf(r)
       , i = Object.values(e).reduce( (l, u, c) => ({
         ...l,
-        [c]: `$${u.toFixed(0)}`
+        [c]: `KES ${u.toFixed(0)}`
     }), {})
       , o = l => {
         t(Object.keys(e)[l])
