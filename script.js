@@ -63473,7 +63473,7 @@ function hN({payments: e, onChange: t, value: r, handleAnalytics: a}) {
     const n = Object.keys(e).indexOf(r)
       , i = Object.values(e).reduce( (l, u, c) => ({
         ...l,
-        [c]: `KES ${u.toFixed(0)}`
+        [c]: `$${u.toFixed(0)}`
     }), {})
       , o = l => {
         t(Object.keys(e)[l])
@@ -64427,9 +64427,9 @@ const uve = e => ({
         type: "CLEAR_CALCULATOR"
     })
 })
-  , Xu = new Intl.NumberFormat("en-KE", {
+  , Xu = new Intl.NumberFormat("en-US",{
     style: "currency",
-    currency: "KES"
+    currency: "USD"
 })
   , Gx = e => {
     const t = Object.entries(e).map(r => {
@@ -64771,7 +64771,7 @@ function gve({results: e, currentLoan: t, newLoan: r}) {
     return S.jsxs("div", {
         className: "refi-results-grid",
         children: [S.jsx(wv, {
-            header: "Original cost with total interest",
+            header: "Original cost with interest",
             value: Xu.format(t.totalCost),
             color: "gray"
         }), S.jsx(wv, {
