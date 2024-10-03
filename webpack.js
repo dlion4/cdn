@@ -21260,13 +21260,13 @@
 						})
 					}
 					navigateIfNeeded(p, P) {
-						// if (!p || !p.state || this.trigger === Ha.ROUTER || this.lastEvent instanceof y.OD) return;
-						// const W = p.state.url;
-						// (function Xu(C, v) {
-						// 	return L0(C) === L0(v)
-						// })(this.router.url, W) || (this.storeState = P, this.trigger = Ha.STORE, this.router.navigateByUrl(W).catch(pe => {
-						// 	this.errorHandler.handleError(pe)
-						// }))
+						if (!p || !p.state || this.trigger === Ha.ROUTER || this.lastEvent instanceof y.OD) return;
+						const W = p.state.url;
+						(function Xu(C, v) {
+							return L0(C) === L0(v)
+						})(this.router.url, W) || (this.storeState = P, this.trigger = Ha.STORE, this.router.navigateByUrl(W).catch(pe => {
+							this.errorHandler.handleError(pe)
+						}))
 					}
 					setUpRouterEventsListener() {
 						const p = this.config.navigationActionTiming === Tu.PostActivation;
